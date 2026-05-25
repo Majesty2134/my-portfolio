@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Project Page</title>
+</head>
+<body>
+
+  <h2 class="section-heading" style="padding: 6rem 2rem 0;">My Projects</h2>
+
+    <div class="video-container">
+
+        <!-- CARD 1 -->
+        <div class="container-card">
+            <video class="rounded-video" controls>
+                <source src="portfolio videos/Larry B Casuals - Google Chrome 2026-04-29 23-09-06.mp4" type="video/mp4">
+            </video>
+
+            <div class="project-description">
+                <h2 class="description-title">Larry B Casuals</h2>
+                <p class="subtitle">An ECommerce website built with HTML, CSS and JavaScript — fully responsive layout perfect for both PC and all mobile devices. The website includes:</p>
+            </div>
+
+            <div class="list-container">
+                <ul>
+                    <strong>Landing Page:</strong>
+                    <li>Navbar</li>
+                    <li>Hero section</li>
+                    <li>Featured Collection</li>
+                    <li>Story Section</li>
+                    <li>Pillar Section</li>
+                    <li>F&amp;Q Section</li>
+                    <li>About Section</li>
+                    <li>Footer section</li>
+                    <li>Contact Section</li>
+                </ul>
+                <ul>
+                    <strong>Other Pages:</strong>
+                    <li>Collection Page</li>
+                    <li>Product Page</li>
+                    <li>Cart Page</li>
+                    <li>Payment Page</li>
+                    <li>Enquiry Form Section</li>
+                </ul>
+                <ul>
+                    <strong>Animations:</strong>
+                    <li>Fade in</li>
+                    <li>Translate (pop up on hover)</li>
+                    <li>Image change on hover (PC)</li>
+                    <li>Image change on fade in</li>
+                </ul>
+                <ul>
+                    <strong>APIs:</strong>
+                    <li>Paystack (Payment)</li>
+                    <li>EmailJS</li>
+                </ul>
+            </div>
+        </div>
+        <!-- END CARD 1 -->
+
+        <!-- CARD 2 -->
+        <div class="container-card drop-item" data-delay="0">
+            <video class="rounded-video" controls>
+                <source src="portfolio videos/Google-Form Clone.mp4" type="video/mp4">
+            </video>
+
+            <div class="project-description">
+                <h2 class="description-title">Google Form Clone</h2>
+                <p class="subtitle">A styled survey form builder with dark/light theme toggle, built with HTML, CSS and JavaScript.</p>
+            </div>
+        </div>
+        <!-- END CARD 2 -->
+
+        <!--Card 3-->
+        <div class="container-card drop-item" data-delay="0">
+            <video class="rounded-video" controls>
+                <source src="portfolio videos/FreshMart Project.mp4" type="video/mp4">
+            </video>
+
+            <div class="project-description">
+                <h2 class="description-title">Supermarket Website Landing Page</h2>
+                <p class="subtitle">A styled Supermarket website landing page, built with html and css.</p>
+            </div>
+
+        </div>
+<!-- END CARD 3-->
+
+              <!-- CARD 4-->
+                <div class="container-card drop-item" data-delay="0">
+            <video class="rounded-video" controls>
+                <source src="portfolio videos/Admin Dashboard.mp4" type="video/mp4">
+            </video>
+
+            <div class="project-description">
+                <h2 class="description-title">Admin Dashbaord</h2>
+                <p class="subtitle">This admin dashbaord provides administration with a comprehensive overview of system perfomance 
+                    and tools for managing users, content, transaction and operational data efficiently.</p>
+                    
+                </div>
+
+        </div>
+
+        <!-- END CARD 4-->
+
+        <!-- CARD 5-->
+           <div class="container-card drop-item" data-delay="0">
+            <video class="rounded-video" controls>
+                <source src="portfolio videos/Tag Closet.mp4" type="video/mp4">
+            </video>
+
+             <div class="project-description">
+                <h2 class="description-title">Tag Closet</h2>
+                <p class="subtitle">An ECommerce website built with HTML, CSS and JavaScript — fully responsive layout perfect for both PC and all mobile devices. This website features:</p>
+            </div>
+
+            <div class="list-container">
+                <ul>
+                    <strong>Landing Page:</strong>
+                    <li>Navbar</li>
+                    <li>Hero section</li>
+                    <li>Collections</li>
+                    <li>About Section</li>
+                    <li>Footer section</li>
+                    <li>Contact Section</li>
+                </ul>
+                <ul>
+                    <strong>Other Pages:</strong>
+                    <li>Collection Page</li>
+                    <li>Product Page</li>
+                    <li>Cart Page</li>
+                    <li>Contact page</li>
+                </ul>
+                <ul>
+                    <strong>Animations:</strong>
+                    <li>Fade in</li>
+                    <li>Translate (pop up on hover)</li>
+                </ul>
+                <ul>
+                    <strong>APIs:</strong>
+                    <li>Paystack (Payment)</li>
+                    <li>EmailJS</li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+        <!-- END CARD 5-->
+    </div>
+ <script>
+      const dropItems = document.querySelectorAll('.drop-item');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add('landed');
+            }, i * 150);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      dropItems.forEach(item => observer.observe(item));
+    </script>
+</body>
+</html>
