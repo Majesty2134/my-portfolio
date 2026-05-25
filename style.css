@@ -385,6 +385,11 @@ h3 {
   text-decoration-thickness: 2px; /* modern CSS */
   text-underline-offset: 4px;     /* space between text and line */
    text-underline-offset: 6px;  
+   
+}
+
+#skills-set {
+  display:block;
 }
 
 #contact {
@@ -431,12 +436,14 @@ h3 {
 }
 
 .contact-buttons {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   justify-content: center;      /* centers the buttons */
   gap: 1rem;
-  flex-wrap: wrap;              /* wraps on small screens */
+  flex-wrap: wrap;   /* wraps on small screens */
 }
 
+ 
 .btn-primary {
   background-color: #3b82f6;
   color: #fff;
