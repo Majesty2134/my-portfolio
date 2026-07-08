@@ -33,6 +33,4 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-setTimeout(function () {
-    el.classList.add('landed');
-}, Number(delay) + 2000);
+ 
