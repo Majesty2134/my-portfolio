@@ -300,6 +300,8 @@ section {
   width: 30%; /* smaller so all three fit */
   min-width: 200px; /* optional: don't shrink too small */
   box-shadow: 0 4px 20px var(--color-accent-glow);
+  display:block;
+  justify-content: space-between;
 }
 
  
@@ -345,6 +347,16 @@ h3 {
     font-weight: 500;
 }
 
+.project-tags{
+  display: flex;
+   gap: 5px;
+   position: relative;
+   left: 15px;
+}
+
+.tag1, .tag3, .tag4{
+  margin-top: 5px;
+}
 .skills-group {
  background-color: var(--color-surface); 
   padding: 10px;
@@ -375,6 +387,7 @@ h3 {
 .skills-card {
   padding: 10px;
    border-radius: 32%;
+    box-shadow: 2px 4px 2px var(--color-accent-glow);
    
 }
 
@@ -386,6 +399,7 @@ h3 {
   text-underline-offset: 4px;     /* space between text and line */
    text-underline-offset: 6px;  
    display: flex;
+    
    align-items: center;  
    margin-bottom: 0.5rem;
 }
@@ -605,6 +619,24 @@ h3 {
   .stats-card-goal, .stats-card-platform, .stats-card-learning {
     height: auto; /* allow height to adjust based on content */
 }
+
+.project-description{
+  font-size:small;
+}
+
+.project-card{
+  display: block;
+  justify-content: space-between;
+}
+
+.project-tags{
+  display: flex;
+  position:relative;
+  left: 2px;
+}
+ 
+
+ 
 
 @media (max-width: 640px) {
   .card-body {
