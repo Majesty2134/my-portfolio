@@ -40,6 +40,11 @@ body {
   margin-bottom: 0.75rem;
 }
 
+.card-subtitle a {
+  text-decoration: none;
+  color:#5b8af5;
+}
+
 .page-title {
   font-family: 'Syne', sans-serif;
   font-size: clamp(2rem, 5vw, 3rem);
